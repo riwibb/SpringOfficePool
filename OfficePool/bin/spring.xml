@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<!--bean id="bean-RoundOne" class="org.sallu.springdemo.officepool.RoundOne" autowire="byName"/-->
+	<bean id="bean-RoundOne" class="org.sallu.springdemo.officepool.RoundOne"/>
+	<bean id="oEasternOne" class="org.sallu.springdemo.officepool.Team">
+		<qualifier value="E1"/>
+	    <property name="teamID" value="1"/>
+		<property name="teamName" value="${EasternConf.One}"/>
+	</bean>	
+	<bean id="oEasternTwo" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E2"/>
+	    <property name="teamID" value="2"/>
+		<property name="teamName" value="${EasternConf.Two}"/>
+	</bean>
+	<bean id="oEasternThree" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E3"/>
+	    <property name="teamID" value="3"/>
+		<property name="teamName" value="${EasternConf.Three}"/>
+	</bean>
+	<bean id="oEasternFour" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E4"/>
+		<property name="teamID" value="4"/>
+		<property name="teamName" value="${EasternConf.Four}"/>
+	</bean>
+	<bean id="oEasternFive" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E5"/>
+	    <property name="teamID" value="5"/>
+		<property name="teamName" value="${EasternConf.Five}"/>
+	</bean>
+	<bean id="oEasternSix" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E6"/>
+		<property name="teamID" value="6"/>
+		<property name="teamName" value="${EasternConf.Six}"/>
+	</bean>				
+	<bean id="oEasternSeven" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E7"/>
+		<property name="teamID" value="7"/>
+		<property name="teamName" value="${EasternConf.Seven}"/>	
+	</bean>
+	<bean id="oEasternEight" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="E8"/>
+		<property name="teamID" value="8"/>
+		<property name="teamName" value="${EasternConf.Eight}"/>
+	</bean>
+	<bean id="oWesternOne" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W1"/>
+		<property name="teamID" value="9"/>
+		<property name="teamName" value="${WesternConf.One}"/>
+	</bean>
+	<bean id="oWesternTwo" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W2"/>
+		<property name="teamID" value="10"/>
+		<property name="teamName" value="${WesternConf.Two}"/>
+	</bean>
+	<bean id="oWesternThree" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W3"/>
+		<property name="teamID" value="11"/>
+		<property name="teamName" value="${WesternConf.Three}"/>
+	</bean>
+	<bean id="oWesternFour" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W4"/>
+		<property name="teamID" value="12"/>
+		<property name="teamName" value="${WesternConf.Four}"/>
+	</bean>
+	<bean id="oWesternFive" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W5"/>
+		<property name="teamID" value="13"/>
+		<property name="teamName" value="${WesternConf.Five}"/>
+	</bean>
+	<bean id="oWesternSix" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W6"/>
+		<property name="teamID" value="14"/>
+		<property name="teamName" value="${WesternConf.Six}"/>
+	</bean>				
+	<bean id="oWesternSeven" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W7"/>
+		<property name="teamID" value="15"/>
+		<property name="teamName" value="${WesternConf.Seven}"/>	
+	</bean>
+	<bean id="oWesternEight" class="org.sallu.springdemo.officepool.Team">
+	    <qualifier value="W8"/>
+		<property name="teamID" value="16"/>
+		<property name="teamName" value="${WesternConf.Eight}"/>
+	</bean>
+	<bean id="oPlayerOne" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P1"/>
+		<property name="playerName" value="${Player.One}"/>
+	</bean>
+	<bean id="oPlayerTwo" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P2"/>
+		<property name="playerName" value="${Player.Two}"/>
+	</bean>	
+	<bean id="oPlayerThree" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P3"/>
+		<property name="playerName" value="${Player.Three}"/>
+	</bean>
+	<bean id="oPlayerFour" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P4"/>
+		<property name="playerName" value="${Player.Four}"/>
+	</bean>	
+	<bean id="oPlayerFive" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P5"/>
+		<property name="playerName" value="${Player.Five}"/>
+	</bean>	
+	<bean id="oPlayerSix" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P6"/>
+		<property name="playerName" value="${Player.Six}"/>
+	</bean>	
+	<bean id="oPlayerSeven" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P7"/>
+		<property name="playerName" value="${Player.Seven}"/>
+	</bean>	
+	<bean id="oPlayerEight" class="org.sallu.springdemo.officepool.PlayerRoundOne">
+		<qualifier value="P8"/>
+		<property name="playerName" value="${Player.Eight}"/>
+	</bean>	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+ 		<property name="locations" value="config.properties"/>
+	</bean>
+	<context:annotation-config/>
+</beans>
